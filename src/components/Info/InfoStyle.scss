@@ -1,0 +1,25 @@
+@import "../../mainVariables.scss";
+
+.info {
+  background: $primary-color-light2;
+
+  .info-center {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+
+    .info-container {
+      max-width: 250px;
+      text-align: center;
+
+      .info-icon {
+        font-size: 3rem;
+        color: $primary-color-dark1;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

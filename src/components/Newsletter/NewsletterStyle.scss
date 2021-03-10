@@ -1,0 +1,47 @@
+@import "../../mainVariables.scss";
+
+.newsletter {
+  background: linear-gradient(
+      rgba(125, 128, 129, 0.7),
+      rgba(142, 170, 179, 0.7)
+    ),
+    url("../../images/newsletter-bg.png") center/cover no-repeat;
+  text-align: center;
+
+  h3 {
+    padding-bottom: 30px;
+    padding-top: 50px;
+    color: white;
+  }
+  form {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+
+    input {
+      height: 35px;
+      width: 250px;
+      color: $primary-color-dark1;
+    }
+
+    button {
+      background: $primary-color-dark1;
+      border: none;
+      cursor: pointer;
+      transition: 0.5s all;
+
+      &:hover {
+        background: $primary-color-dark2;
+        .newsletter-icon {
+          color: $primary-color-light3;
+        }
+      }
+
+      .newsletter-icon {
+        width: 35px;
+        line-height: 35px;
+        color: $primary-color-light1;
+      }
+    }
+  }
+}

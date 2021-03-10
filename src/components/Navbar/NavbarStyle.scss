@@ -1,0 +1,42 @@
+@import "../../mainVariables.scss";
+
+nav {
+  height: 64px;
+  width: 100%;
+  background-color: $primary-color-dark1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  .navbar-center {
+    width: 80%;
+    height: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    .navbar-mobile {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        color: $primary-color-light3;
+        cursor: pointer;
+
+        span {
+          color: $primary-color-light1;
+        }
+      }
+
+      .nav-menu-bars {
+        font-size: 1.5rem;
+        color: $primary-color-light3;
+        margin-top: 8px;
+        cursor: pointer;
+      }
+    }
+  }
+}

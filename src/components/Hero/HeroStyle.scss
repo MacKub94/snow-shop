@@ -1,0 +1,47 @@
+@import "../../mainVariables.scss";
+
+.hero {
+  height: 100vh;
+  background-image: url("../../images/hero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  .info-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+    @media screen and (min-width: 700px) {
+      left: 15%;
+      transform: translateX(0);
+    }
+
+    h2 {
+      text-transform: uppercase;
+      color: $primary-color-light3;
+      background-color: $primary-color-dark1;
+      padding: 5px 10px;
+      margin-bottom: 25px;
+      letter-spacing: 0.1rem;
+    }
+
+    h3 {
+      text-transform: uppercase;
+      color: $primary-color-light3;
+      background-color: $primary-color-light1;
+      padding: 8px 15px;
+      display: inline;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: 0.5s ease-in;
+
+      &:hover {
+        color: $primary-color-dark1;
+      }
+    }
+  }
+}
