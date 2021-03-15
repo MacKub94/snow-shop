@@ -7,7 +7,12 @@ import {
 
 const productsReducer = (state, action) => {
   if (action.type === GET_PRODUCTS_SUCCES) {
-    return { ...state, productsLoading: false, products: action.payload };
+    return {
+      ...state,
+      productsLoading: false,
+      products: action.payload,
+      filteredProducts: action.payload,
+    };
   }
   if (action.type === GET_PRODUCTS_ERROR) {
     return {

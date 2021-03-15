@@ -1,0 +1,13 @@
+@import "../../mainVariables.scss";
+
+.shopHero {
+  width: 80%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+
+  h3 {
+    margin: 10px 5px;
+    color: $primary-color-dark1;
+  }
+}

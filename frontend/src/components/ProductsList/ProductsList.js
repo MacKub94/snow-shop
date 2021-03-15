@@ -4,8 +4,8 @@ import { ProductsContext } from "../../context/productsContext";
 import { Link } from "react-router-dom";
 
 const ProductsList = () => {
-  const { products } = useContext(ProductsContext);
-  return products.map((p) => {
+  const { filteredProducts } = useContext(ProductsContext);
+  return filteredProducts.map((p) => {
     return (
       <div className="product-cart" key={p.id}>
         <div className="product-cart--image">

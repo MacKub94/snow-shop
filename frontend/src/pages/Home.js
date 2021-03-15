@@ -4,7 +4,6 @@ import Bestsellers from "../components/Bestsellers/Bestsellers";
 import CategoryTiles from "../components/CategoryTiles/CategoryTiles";
 import Hero from "../components/Hero/Hero";
 import Info from "../components/Info/Info";
-import Newsletter from "../components/Newsletter/Newsletter";
 
 const Home = () => {
   return (
@@ -14,7 +13,6 @@ const Home = () => {
       <Bestsellers />
       <AboutUs />
       <Info />
-      <Newsletter />
     </>
   );
 };

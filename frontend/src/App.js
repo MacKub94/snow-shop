@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./ScrollToTop";
 import Shop from "./pages/Shop";
 import SingleProduct from "./pages/SingleProduct";
+import Newsletter from "./components/Newsletter/Newsletter";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route exact path="/products/:id" children={<SingleProduct />} />
           </Switch>
         </ScrollToTop>
+        <Newsletter />
         <Footer />
       </Router>
     </>
