@@ -1,7 +1,7 @@
 @import "../../mainVariables.scss";
 
 .hero {
-  height: 100vh;
+  height: calc(100vh - 64px);
   background-image: url("../../images/hero.png");
   background-repeat: no-repeat;
   background-position: center;

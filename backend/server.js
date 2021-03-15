@@ -9,6 +9,10 @@ const app = express();
 
 connectDB();
 
+app.get("/", (req, res) => {
+  res.send("hello");
+});
+
 app.get("/api/products", (req, res) => {
   res.json(products);
 });
@@ -16,10 +20,6 @@ app.get("/api/products", (req, res) => {
 app.get("/api/products/:id", (req, res) => {
   const product = products.find((p) => p.id === req.params.id);
   res.json(product);
-});
-
-app.get("/", (req, res) => {
-  res.send("hello");
 });
 
 const PORT = process.envPORT || 5000;

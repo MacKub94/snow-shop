@@ -1,6 +1,7 @@
 import React from "react";
 import "./NavbarStyle.scss";
 import { FaBars } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -8,9 +9,11 @@ const Navbar = () => {
       <div className="navbar-center">
         <div className="navbar-mobile">
           <div className="logo">
-            <h1>
-              <span>S</span>now<span>S</span>hop
-            </h1>
+            <Link to="/">
+              <h1>
+                <span>S</span>now<span>S</span>hop
+              </h1>
+            </Link>
           </div>
           <div className="nav-menu-bars">
             <FaBars />

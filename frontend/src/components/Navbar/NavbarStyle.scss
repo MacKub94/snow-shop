@@ -4,7 +4,7 @@ nav {
   height: 64px;
   width: 100%;
   background-color: $primary-color-dark1;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 1000;

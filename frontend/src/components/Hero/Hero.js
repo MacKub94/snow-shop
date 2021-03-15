@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./HeroStyle.scss";
 
 const Hero = () => {
@@ -6,7 +7,9 @@ const Hero = () => {
     <section className="hero">
       <div className="info-container">
         <h2>new gear available</h2>
-        <h3>shop now</h3>
+        <Link to="/shop">
+          <h3>shop now</h3>
+        </Link>
       </div>
     </section>
   );
