@@ -1,0 +1,16 @@
+.shop-center {
+  width: 80%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  .filters-list {
+    padding: 0 20px;
+  }
+  .shop-products-list {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 750px) {
+    flex-direction: column;
+  }
+}

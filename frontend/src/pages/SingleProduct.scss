@@ -40,7 +40,6 @@
     button {
       background-color: $primary-color-light1;
       color: $primary-color-dark1;
-      border: none;
       margin: 15px 0;
       padding: 8px 15px;
       border-radius: 999px;
@@ -49,9 +48,6 @@
 
       &:hover {
         color: $primary-color-light3;
-      }
-      &:focus {
-        outline: none;
       }
     }
 

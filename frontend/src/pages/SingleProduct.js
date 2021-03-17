@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import ShopHero from "../components/ShopHero/ShopHero";
 import { ProductsContext } from "../context/productsContext";
 import "./SingleProduct.scss";
+import { formatPrice } from "../helpers";
 import { AiFillMinusCircle, AiFillPlusCircle } from "react-icons/ai";
 
 const SingleProduct = () => {
@@ -24,7 +25,7 @@ const SingleProduct = () => {
         </div>
         <div className="info-section">
           <h2>{title}</h2>
-          <h3>{price} €</h3>
+          <h3>{formatPrice(price)}</h3>
           <h4>{brand}</h4>
           <p>{description}</p>
 

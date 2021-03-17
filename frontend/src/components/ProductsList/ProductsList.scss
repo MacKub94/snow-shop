@@ -1,0 +1,35 @@
+@import "../../mainVariables.scss";
+
+.no-match {
+  color: $primary-color-dark1;
+}
+
+.products-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding-bottom: 50px;
+
+  .product-cart {
+    color: $primary-color-dark1;
+    transition: 0.5s all;
+
+    &:hover {
+      border: 1px solid $primary-color-light1;
+    }
+
+    .product-info {
+      display: flex;
+      justify-content: space-around;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (max-width: 750px) {
+    grid-template-columns: 1fr;
+  }
+}
