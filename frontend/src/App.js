@@ -1,11 +1,11 @@
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home";
-import Footer from "./components/Footer/Footer";
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./ScrollToTop";
 import Shop from "./pages/Shop";
 import SingleProduct from "./pages/SingleProduct";
-import Newsletter from "./components/Newsletter/Newsletter";
+import Cart from "./pages/Cart";
 
 function App() {
   return (
@@ -21,10 +21,11 @@ function App() {
               <Shop />
             </Route>
             <Route exact path="/products/:id" children={<SingleProduct />} />
+            <Route path="/cart">
+              <Cart />
+            </Route>
           </Switch>
         </ScrollToTop>
-        <Newsletter />
-        <Footer />
       </Router>
     </>
   );

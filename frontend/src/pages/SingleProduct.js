@@ -5,11 +5,14 @@ import { ProductsContext } from "../context/productsContext";
 import "./SingleProduct.scss";
 import { formatPrice } from "../helpers";
 import { AiFillMinusCircle, AiFillPlusCircle } from "react-icons/ai";
+import { Link } from "react-router-dom";
+import { CartContext } from "../context/cartContext";
 
 const SingleProduct = () => {
   const { id } = useParams();
   const { singleProduct, fetchSingleProduct } = useContext(ProductsContext);
   const { brand, description, image, price, title } = singleProduct;
+  const { addToCart } = useContext(CartContext);
 
   const [amount, setAmount] = useState(1);
   useEffect(() => {
@@ -48,7 +51,9 @@ const SingleProduct = () => {
               }}
             />
           </div>
-          <button>Add to cart</button>
+          <Link to="/cart" onClick={() => addToCart(singleProduct, amount)}>
+            <button>Add to cart</button>
+          </Link>
         </div>
       </div>
     </div>

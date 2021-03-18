@@ -15,8 +15,8 @@ const ProductsList = () => {
     <div className="products-list">
       {filteredProducts.map((p) => {
         return (
-          <Link to={`/products/${p.id}`}>
-            <div className="product-cart" key={p.id}>
+          <Link to={`/products/${p.id}`} key={p.id}>
+            <div className="product-cart">
               <img src={p.image} alt="" />
               <div className="product-info">
                 <h3>{p.title}</h3>

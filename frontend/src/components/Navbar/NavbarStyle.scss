@@ -14,28 +14,88 @@ nav {
     height: 100%;
     max-width: 1400px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    .navbar-mobile {
-      height: 100%;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    .logo {
+      // color: $primary-color-light3;
+      cursor: pointer;
 
-      .logo {
-        color: $primary-color-light3;
-        cursor: pointer;
+      // span {
+      //   color: $primary-color-light1;
+      // }
+    }
 
-        span {
-          color: $primary-color-light1;
+    .nav-menu-bars {
+      font-size: 1.5rem;
+      color: $primary-color-light3;
+      margin-top: 5px;
+      cursor: pointer;
+    }
+    .navbar-links {
+      display: none;
+    }
+
+    .navbar-btns {
+      display: none;
+    }
+    @media screen and (min-width: 800px) {
+      .nav-menu-bars {
+        display: none;
+      }
+      .navbar-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h4 {
+          color: $primary-color-light3;
+          margin: 0 15px;
+          transition: 0.5s ease-in;
+
+          &:hover {
+            color: $primary-color-light1;
+          }
         }
       }
+      .navbar-btns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-      .nav-menu-bars {
-        font-size: 1.5rem;
-        color: $primary-color-light3;
-        margin-top: 8px;
-        cursor: pointer;
+        button {
+          color: $primary-color-light3;
+          background-color: $primary-color-light1;
+          padding: 8px 15px;
+          border-radius: 999px;
+          cursor: pointer;
+          transition: 0.5s ease-in;
+
+          &:hover {
+            color: $primary-color-dark1;
+          }
+        }
+
+        .cart {
+          color: $primary-color-light3;
+          font-size: 2rem;
+          margin-right: 30px;
+          margin-top: 14px;
+          position: relative;
+        }
+        .cart-items-value {
+          position: absolute;
+          top: 0;
+          right: 0;
+          background-color: $primary-color-light1;
+          font-size: 1.25rem;
+          width: 25px;
+          height: 25px;
+          transform: translateY(-35%) translateX(50%);
+          border-radius: 100%;
+          text-align: center;
+        }
       }
     }
   }
