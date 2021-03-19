@@ -11,8 +11,17 @@ import {
 
 const CartContext = React.createContext();
 
+const getLocalStorage = () => {
+  let cart = localStorage.getItem("cart");
+  if (cart) {
+    return JSON.parse(localStorage.getItem("cart"));
+  } else {
+    return [];
+  }
+};
+
 const initialState = {
-  cart: [],
+  cart: getLocalStorage(),
   totalItems: 0,
   totalPrice: 0,
 };
@@ -41,6 +50,7 @@ const CartProvider = ({ children }) => {
   };
 
   useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(state.cart));
     dispatch({ type: COUNT_TOTALS });
   }, [state.cart]);
   return (

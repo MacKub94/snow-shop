@@ -6,10 +6,12 @@ import { Link } from "react-router-dom";
 import { ProductsContext } from "../../context/productsContext";
 import { CartContext } from "../../context/cartContext";
 import logo from "../../images/logo.png";
+import { UserContext } from "../../context/userContext";
 
 const Navbar = () => {
   const { updateFilters } = useContext(ProductsContext);
   const { totalItems } = useContext(CartContext);
+  const { loginWithRedirect, logout, myUser } = useContext(UserContext);
   return (
     <nav>
       <div className="navbar-center">
@@ -74,7 +76,18 @@ const Navbar = () => {
             </li>
           </Link>
           <li>
-            <button className="login">Login</button>
+            {myUser ? (
+              <button
+                className="login"
+                onClick={() => logout({ returnTo: window.location.origin })}
+              >
+                Logout
+              </button>
+            ) : (
+              <button className="login" onClick={loginWithRedirect}>
+                Login
+              </button>
+            )}
           </li>
         </ul>
       </div>

@@ -1,0 +1,22 @@
+.loading-wraper {
+  height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-spiner {
+  width: 6rem;
+  height: 6rem;
+  display: inline-block;
+  border: 3px solid #7fd9d9;
+  border-radius: 50%;
+  border-top-color: #283d49;
+  animation: 1s spin infinite ease-in-out;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

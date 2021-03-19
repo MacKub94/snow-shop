@@ -1,6 +1,7 @@
 import {
   GET_PRODUCTS_SUCCES,
   GET_PRODUCTS_ERROR,
+  START_FETCHING_SINGLE_PRODUCT,
   GET_SINGLE_PRODUCT_SUCCES,
   GET_SINGLE_PRODUCT_ERROR,
   UPDATE_FILTERS,
@@ -25,6 +26,12 @@ const productsReducer = (state, action) => {
       ...state,
       productsLoading: false,
       productsError: true,
+    };
+  }
+  if (action.type === START_FETCHING_SINGLE_PRODUCT) {
+    return {
+      ...state,
+      singleProductLoading: true,
     };
   }
   if (action.type === GET_SINGLE_PRODUCT_SUCCES) {

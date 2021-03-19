@@ -1,6 +1,120 @@
+@import "../mainVariables.scss";
+
 .cart-center {
   width: 80%;
   max-width: 1400px;
   margin: 50px auto;
-  outline: 1px solid red;
+
+  .empty-cart {
+    text-align: center;
+    h2 {
+      color: $primary-color-dark1;
+    }
+    button {
+      color: $primary-color-light3;
+      background-color: $primary-color-light1;
+      margin-top: 25px;
+      padding: 8px 15px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: 0.5s ease-in;
+
+      &:hover {
+        color: $primary-color-dark1;
+      }
+    }
+  }
+  .cart-list {
+    width: 100%;
+    border-top: 1px solid $primary-color-dark1;
+    border-bottom: 1px solid $primary-color-dark1;
+    .card-item {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      margin: 20px 0;
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h4 {
+          color: $primary-color-dark1;
+        }
+
+        button {
+          color: $primary-color-dark1;
+        }
+      }
+      img {
+        width: 100px;
+      }
+
+      .amount {
+        display: flex;
+
+        .amount-icon {
+          color: $primary-color-light1;
+          font-size: 1.25rem;
+          cursor: pointer;
+        }
+
+        h4 {
+          margin: 0 8px;
+        }
+      }
+    }
+  }
+
+  .cart-btns {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 40px;
+    button {
+      color: $primary-color-light3;
+      background-color: $primary-color-light1;
+      padding: 8px 15px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: 0.5s ease-in;
+
+      &:hover {
+        color: $primary-color-dark1;
+      }
+    }
+  }
+
+  .cart-totals {
+    background-color: $primary-color-light2;
+    border: 1px solid $primary-color-dark1;
+    width: 30%;
+    margin-left: auto;
+    text-align: center;
+    padding: 40px;
+
+    h2 {
+      color: $primary-color-dark1;
+    }
+
+    button {
+      color: $primary-color-light3;
+      background-color: $primary-color-light1;
+      padding: 8px 15px;
+      margin: 25px 0;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: 0.5s ease-in;
+
+      &:hover {
+        color: $primary-color-dark1;
+      }
+    }
+    @media screen and (max-width: 1000px) {
+      width: 45%;
+    }
+    @media screen and (max-width: 700px) {
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
 }

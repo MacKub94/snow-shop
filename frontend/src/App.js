@@ -6,6 +6,7 @@ import ScrollToTop from "./ScrollToTop";
 import Shop from "./pages/Shop";
 import SingleProduct from "./pages/SingleProduct";
 import Cart from "./pages/Cart";
+import Checkout from "./pages/Checkout";
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
             <Route exact path="/products/:id" children={<SingleProduct />} />
             <Route path="/cart">
               <Cart />
+            </Route>
+            <Route path="/checkout">
+              <Checkout />
             </Route>
           </Switch>
         </ScrollToTop>

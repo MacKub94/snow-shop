@@ -3,6 +3,7 @@ import reducer from "../reducers/productsReducer.js";
 import {
   GET_PRODUCTS_SUCCES,
   GET_PRODUCTS_ERROR,
+  START_FETCHING_SINGLE_PRODUCT,
   GET_SINGLE_PRODUCT_SUCCES,
   GET_SINGLE_PRODUCT_ERROR,
   UPDATE_FILTERS,
@@ -45,6 +46,7 @@ const ProductsProvider = ({ children }) => {
 
   const fetchSingleProduct = async (url) => {
     try {
+      dispatch({ type: START_FETCHING_SINGLE_PRODUCT });
       const response = await fetch(url);
       const singleProduct = await response.json();
       dispatch({ type: GET_SINGLE_PRODUCT_SUCCES, payload: singleProduct });
