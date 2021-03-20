@@ -11,7 +11,9 @@ import { UserContext } from "../../context/userContext";
 const Navbar = () => {
   const { updateFilters } = useContext(ProductsContext);
   const { totalItems } = useContext(CartContext);
-  const { loginWithRedirect, logout, myUser } = useContext(UserContext);
+  const { loginWithRedirect, logout, myUser, toogleSidebar } = useContext(
+    UserContext
+  );
   return (
     <nav>
       <div className="navbar-center">
@@ -21,7 +23,7 @@ const Navbar = () => {
             <span>S</span>now<span>S</span>hop
           </h1> */}
         </Link>
-        <div className="nav-menu-bars">
+        <div className="nav-menu-bars" onClick={toogleSidebar}>
           <FaBars />
         </div>
         <ul className="navbar-links">

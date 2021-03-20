@@ -7,11 +7,13 @@ import Shop from "./pages/Shop";
 import SingleProduct from "./pages/SingleProduct";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
   return (
     <>
       <Router>
+        <Sidebar />
         <Navbar />
         <ScrollToTop>
           <Switch>
