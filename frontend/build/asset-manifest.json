@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2b390027.chunk.css",
+    "main.js": "/static/js/main.a7ac226a.chunk.js",
+    "main.js.map": "/static/js/main.a7ac226a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.837502d6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.837502d6.js.map",
+    "static/js/2.3faac433.chunk.js": "/static/js/2.3faac433.chunk.js",
+    "static/js/2.3faac433.chunk.js.map": "/static/js/2.3faac433.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.2b390027.chunk.css.map": "/static/css/main.2b390027.chunk.css.map",
+    "static/js/2.3faac433.chunk.js.LICENSE.txt": "/static/js/2.3faac433.chunk.js.LICENSE.txt",
+    "static/media/about1.e20964ff.png": "/static/media/about1.e20964ff.png",
+    "static/media/about2.be3d3eab.png": "/static/media/about2.be3d3eab.png",
+    "static/media/accesories.47efb0b3.png": "/static/media/accesories.47efb0b3.png",
+    "static/media/HeroStyle.scss": "/static/media/hero.3a394706.png",
+    "static/media/menclo.bcf691ca.png": "/static/media/menclo.bcf691ca.png",
+    "static/media/NewsletterStyle.scss": "/static/media/newsletter-bg.ce679dc3.png",
+    "static/media/ski.52620a1e.png": "/static/media/ski.52620a1e.png",
+    "static/media/snowboard.6045a617.png": "/static/media/snowboard.6045a617.png",
+    "static/media/womenclo.b82c14d4.png": "/static/media/womenclo.b82c14d4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.837502d6.js",
+    "static/js/2.3faac433.chunk.js",
+    "static/css/main.2b390027.chunk.css",
+    "static/js/main.a7ac226a.chunk.js"
+  ]
+}
